@@ -1,0 +1,36 @@
+
+Draw a diagram showing the dataflow through the application starting with a form submission, ending with the re-rendering of the page. This will involve a multi-direction data-flow with the client posting data to the server and the server sending data back to the client with the response. Detail the client, server and database in the diagram and include the names of the files involved in the process.
+
+Questions
+What is responsible for defining the routes of the games resource?
+
+the router.js helper, takes the form data and is used to perform crud requests to the server
+
+
+What are the the responsibilities of server.js?
+
+To connect to the database
+to connect to the client
+to pass information between them
+
+
+What are the responsibilities of the gamesRouter?
+
+To interact with and preform actions on the database itself
+to perform CRUD requests
+
+Which of the games API routes does the front-end application consume (make requests to)?
+
+Post
+Get
+Delete
+
+
+Extensions
+What are we using the MongoDB Driver API for?
+
+
+Why do we need to use ObjectId from the MongoDB driver API?
+
+Mongo has its own id tag system so we need to use the ObjectId to give our records
+ids that Mongo recognises.
